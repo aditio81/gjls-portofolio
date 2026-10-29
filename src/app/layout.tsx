@@ -15,8 +15,34 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "GJLS Entertainment",
-  description: "PT. Hiburan Jelas Nusantara",
+  metadataBase: new URL('https://gjls-portfolio.vercel.app'),
+  title: "GJLS Entertainment — Official Hub for Orang Baek",
+  description: "Website resmi GJLS Entertainment. Event, Merch, Content, Digital Pass, dan Partnership. PT. Hiburan Jelas Nusantara.",
+  keywords: ["GJLS", "GJLS Entertainment", "Komedi Indonesia", "Rigen", "Rispo", "Hifdzi", "Podcast", "Merch", "Event", "Partnership"],
+  authors: [{ name: "Aditio" }],
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+  },
+  openGraph: {
+    title: "GJLS Entertainment — Official Hub for Orang Baek",
+    description: "Website resmi GJLS Entertainment. Event, Merch, Content, Digital Pass, dan Partnership.",
+    url: "https://gjls-portfolio.vercel.app/",
+    siteName: "GJLS Entertainment",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "GJLS Entertainment Website",
+      },
+    ],
+    locale: "id_ID",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -25,19 +51,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="id">
+    <html lang="id" className="scroll-smooth">
       <body className={`${spaceGrotesk.variable} ${inter.variable} bg-gjls-white font-body flex flex-col min-h-screen`}>
-        {/* Tambahkan flex flex-col min-h-screen di body agar footer selalu di bawah */}
-        
         <Navbar />
         
-        {/* grow memastikan konten mengisi ruang kosong, mendorong footer ke bawah */}
         <main className="grow">
           {children}
         </main>
         
         <Footer />
-        
       </body>
     </html>
   );
