@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+/* 1. DEFINISI VARIABEL NATIVE (Sesuai request kamu) */
+:root {
+  /* Warna GJLS */
+  --color-gjls-white: #FFFFFF;
+  --color-gjls-cream: #F6F4ED;
+  --color-gjls-pink: #EF476F;
+  --color-gjls-teal: #4A7C8C;
+  --color-gjls-yellow: #FFD166;
+  --color-gjls-black: #1D1D1F;
+
+  /* Warna Brand Eksternal */
+  --color-brand-tix: #0B1429;      /* Biru navy TIX.ID */
+  --color-brand-youtube: #FF0033;  /* Merah YouTube */
+
+  /* Font */
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "Inter", sans-serif;
+
+  /* Shadow Neo-Brutalism */
+  --shadow-brutal: 4px 4px 0px 0px #1D1D1F;
+  --shadow-brutal-sm: 2px 2px 0px 0px #1D1D1F;
+  --shadow-brutal-lg: 6px 6px 0px 0px #1D1D1F;
+}
+
+/* 2. MAPPING KE TAILWIND v4 (Agar class utility tetap jalan) */
+/* Tailwind CSS v4 directive; ignore it in generic at-rule lint checks. */
+/* stylelint-disable at-rule-no-unknown */
+@theme {
+  --color-gjls-white: var(--color-gjls-white);
+  --color-gjls-cream: var(--color-gjls-cream);
+  --color-gjls-pink: var(--color-gjls-pink);
+  --color-gjls-teal: var(--color-gjls-teal);
+  --color-gjls-yellow: var(--color-gjls-yellow);
+  --color-gjls-black: var(--color-gjls-black);
+
+    /* Warna Brand Eksternal */
+  --color-brand-tix: var(--color-brand-tix);
+  --color-brand-youtube: var(--color-brand-youtube);
+  
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  
+  --shadow-brutal: var(--shadow-brutal);
+  --shadow-brutal-sm: var(--shadow-brutal-sm);
+  --shadow-brutal-lg: var(--shadow-brutal-lg);
+}
+/* stylelint-enable at-rule-no-unknown */
+
+/* 3. GLOBAL STYLES */
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-gjls-white); /* Background sekarang Putih, bukan Cream */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+/* Animasi Marquee untuk Stats Bar */
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+/* Dot Pattern untuk Background Putih */
+.bg-dot-pattern {
+  background-image: radial-gradient(circle, #D9D9D9 1px, transparent 1px);
+  background-size: 20px 20px;
+}
