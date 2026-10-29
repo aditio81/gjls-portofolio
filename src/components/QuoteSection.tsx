@@ -6,15 +6,15 @@ export default function QuoteSection() {
       <div className="max-w-7xl mx-auto">
         <div className="border-4 border-gjls-black shadow-brutal bg-white rounded-xl p-8 md:p-12 relative">
           
-          {/* Badge Kiri Atas */}
-          <span className="inline-block px-4 py-1.5 bg-gjls-yellow border-2 border-gjls-black rounded-full font-display font-bold text-xs uppercase tracking-wider shadow-brutal-sm mb-6">
-            ★ QUOTE SINGKAT UNTUK HARI-HARIMU ★
-          </span>
-
-          {/* Ikon Quote Kanan Atas */}
-          <div className="absolute top-6 right-6 w-10 h-10 bg-gjls-pink border-2 border-gjls-black rounded-lg flex items-center justify-center text-white font-display font-bold shadow-brutal-sm">
+          {/* Tombol Quote - Di Mobile Muncul di Atas */}
+          <div className="w-10 h-10 bg-gjls-pink border-2 border-gjls-black rounded-lg flex items-center justify-center text-white font-display font-bold shadow-brutal-sm mb-4 md:absolute md:top-6 md:right-6 md:mb-0">
             "
           </div>
+
+          {/* Badge - Di Mobile Muncul di Bawah Tombol Quote */}
+          <span className="inline-block px-4 py-1.5 bg-gjls-yellow border-2 border-gjls-black rounded-full font-display font-bold text-xs uppercase tracking-wider shadow-brutal-sm w-fit">
+            QUOTE SINGKAT UNTUK HARI-HARIMU
+          </span>
 
           {/* Teks Quote */}
           <blockquote className="font-display text-2xl md:text-4xl font-bold text-gjls-black leading-tight mb-6">
