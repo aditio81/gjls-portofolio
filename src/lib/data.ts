@@ -875,7 +875,7 @@ export const vodCatalog = [
   {
     id: 1,
     title: "GJLS LIVE PODCAST 373",
-    poster: "/images/Digital/vod-podcast-373.png",
+    poster: "/images/Digital/vod-podcast-373.jpg",
     price: "Rp.50.000",
     duration: "60 Minute",
     link: "#",
@@ -883,7 +883,7 @@ export const vodCatalog = [
   {
     id: 2,
     title: "TOM: IBUKU IBU IBU",
-    poster: "/images/Digital/vod-tom.png",
+    poster: "/images/Digital/vod-tom.jpg",
     price: "Rp.50.000",
     duration: "60 Minute",
     link: "#",
@@ -891,7 +891,7 @@ export const vodCatalog = [
   {
     id: 3,
     title: "GJLS COMEDY NIGHT",
-    poster: "/images/Digital/vod-comedy-night.png",
+    poster: "/images/Digital/vod-comedy-night.jpg",
     price: "Rp.50.000",
     duration: "60 Minute",
     link: "#",
@@ -899,7 +899,7 @@ export const vodCatalog = [
   {
     id: 4,
     title: "WEDDING PROPOSAL",
-    poster: "/images/Digital/vod-wedding.png",
+    poster: "/images/Digital/vod-wedding.jpg",
     price: "Rp.50.000",
     duration: "60 Minute",
     link: "#",
@@ -915,7 +915,7 @@ export const vodCatalog = [
   {
     id: 6,
     title: "KOMEDIAN CILIK",
-    poster: "/images/Digital/vod-komedian.png",
+    poster: "/images/Digital/vod-komedian.jpg",
     price: "Rp.50.000",
     duration: "60 Minute",
     link: "#",
