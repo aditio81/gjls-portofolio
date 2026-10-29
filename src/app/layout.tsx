@@ -20,13 +20,6 @@ export const metadata: Metadata = {
   description: "Website resmi GJLS Entertainment. Event, Merch, Content, Digital Pass, dan Partnership. PT. Hiburan Jelas Nusantara.",
   keywords: ["GJLS", "GJLS Entertainment", "Komedi Indonesia", "Rigen", "Rispo", "Hifdzi", "Podcast", "Merch", "Event", "Partnership"],
   authors: [{ name: "Aditio" }],
-  icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/favicon-96x96.png", sizes: "96x96", type: "image/png" },
-    ],
-    apple: "/apple-touch-icon.png",
-  },
   openGraph: {
     title: "GJLS Entertainment — Official Hub for Orang Baek",
     description: "Website resmi GJLS Entertainment. Event, Merch, Content, Digital Pass, dan Partnership.",
