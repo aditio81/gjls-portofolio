@@ -10,7 +10,6 @@ export default function Footer() {
         
         {/* Kolom 1: Brand Info & Socials */}
         <div className="col-span-1 md:col-span-1">
-          {/* Logo GJLS */}
           <img 
             src="/images/gjls-logo.png" 
             alt="GJLS Entertainment Logo"
@@ -27,7 +26,6 @@ export default function Footer() {
             Jakarta, Indonesia
           </p>
 
-          {/* Social Media Links */}
           <div className="space-y-2">
             <p className="font-body text-xs font-bold text-gjls-black uppercase tracking-wider">
               TEMUKAN KAMI DI:
@@ -81,20 +79,34 @@ export default function Footer() {
           </ul>
         </div>
 
-        {/* Kolom 4: Newsletter */}
+        {/* Kolom 4: Newsletter (SUDAH DIPERBAIKI MENGGUNAKAN FORM) */}
         <div className="col-span-1">
           <h4 className="font-display font-bold text-gjls-black mb-4">INFO EVENT & MERCH</h4>
           <p className="font-body text-sm text-gray-600 mb-4">Langganan kabar jadwal manggung dan rilis merch sebelum ludes!</p>
-          <div className="flex gap-2">
+          
+          <form 
+            action="https://api.web3forms.com/submit" 
+            method="POST" 
+            className="flex gap-2"
+          >
+            <input type="hidden" name="access_key" value="8f27e58d-9a4e-4707-af7e-d76e06dcdb2e" />
+            <input type="hidden" name="subject" value="Newsletter Subscription - GJLS Entertainment" />
+            <input type="hidden" name="from_name" value="GJLS Newsletter" />
+            
             <input 
               type="email" 
+              name="email"
               placeholder="Email kamu..." 
+              required
               className="w-full px-3 py-2 border-2 border-gjls-black bg-white font-body text-sm focus:outline-none focus:border-gjls-pink transition-colors"
             />
-            <button className="px-4 py-2 bg-gjls-pink text-white font-display font-bold text-sm border-2 border-gjls-black shadow-brutal hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-brutal-sm transition-all shrink-0">
+            <button 
+              type="submit"
+              className="px-4 py-2 bg-gjls-pink text-white font-display font-bold text-sm border-2 border-gjls-black shadow-brutal hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-brutal-sm transition-all shrink-0"
+            >
               KIRIM
             </button>
-          </div>
+          </form>
         </div>
 
       </div>
