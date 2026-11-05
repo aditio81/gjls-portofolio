@@ -92,6 +92,7 @@ export default function Footer() {
             <input type="hidden" name="access_key" value="8f27e58d-9a4e-4707-af7e-d76e06dcdb2e" />
             <input type="hidden" name="subject" value="Newsletter Subscription - GJLS Entertainment" />
             <input type="hidden" name="from_name" value="GJLS Newsletter" />
+            <input type="hidden" name="_next" value="https://gjls-portfolio.vercel.app/thanks" />
             
             <input 
               type="email" 
